@@ -11,7 +11,7 @@ resource "aws_instance" "sentry" {
     instance_type = "t2.large"
     key_name = "11am"
     security_groups = ["${aws_security_group.sentry-sg.name}"]
-    user_data = "${file("sentry.sh")}"
+    user_data = "${file("user-data.sh")}"
     
 
 

@@ -1,9 +1,4 @@
 #! /bin/bash
-sudo yum install git -y
-if [ $? -ne 0 ]; then
-  echo "git not installed"
-  exit 1
-fi
 sudo rm -rf /tmp/sentry
 mkdir /tmp/sentry
 cd /tmp/sentry
